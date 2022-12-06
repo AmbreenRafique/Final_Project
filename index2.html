@@ -156,235 +156,170 @@
         <hr class="line">
         <div class="items">
             
-
+          
             
             <form class="item" method=post enctype=multipart/form-data>
               Per_Unit_Selling_Price:  <input type="number" name="Per_Unit_Selling_price" min="0.3" max="3770"><br>
               Shipping_Cost: <input type=number name="Shipping_Cost" min="0" max="930"><br>
-              Quantity:  <input type=number name="Quantity" ><br>
+              Quantity:  <input type=number name="Quantity"  min="2" max="13" ><br>
               <!-- Category:  <input type="text" name="Category" "Office Supplies", "Furniture", "Technology" ><br> -->
-            </form>
+            
           
             <!-- dropdowns -->
 
             
             <!-- dropdowns -->
-        <div class="dropdown01">   
-            <div class="dropdown" method=post enctype=multipart/form-data>
+            <div class="dropdown01">   
+            <div class="dropdown" >
               <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
                 Country
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" method=post  name="Country">
-                <a class="dropdown-item" href="#">Pakista</a>
+                
+       
+                <a class="dropdown-item" href="#">Australia</a>
                 <a class="dropdown-item" href="#">Canada</a>
-                <a class="dropdown-item" href="#">Abc</a>
+                <a class="dropdown-item" href="#">China</a>
+                <a class="dropdown-item" href="#">Sweden</a>
+                <a class="dropdown-item" href="#">France</a>
+                <a class="dropdown-item" href="#">India</a>
+                <a class="dropdown-item" href="#">Germany</a>
+                <a class="dropdown-item" href="#">France</a>
+                <a class="dropdown-item" href="#">Mexico</a>
+                <a class="dropdown-item" href="#">Sweden</a>
+                <a class="dropdown-item" href="#">United Kingdom</a>
+                <a class="dropdown-item" href="#">United States</a>
+            </div>
+
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
+                Sub_Category
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" method=post  name="Sub_Category">
+                
+                <a class="dropdown-item" href="#">Storage</a>
+                <a class="dropdown-item" href="#">Supplies</a>
+                <a class="dropdown-item" href="#">Paper</a>
+                <a class="dropdown-item" href="#">Furnishings</a>
+                <a class="dropdown-item" href="#">Copiers</a>
+                <a class="dropdown-item" href="#">Bookcases</a>
+                <a class="dropdown-item" href="#">Appliances</a>
+                <a class="dropdown-item" href="#">Art</a>
+                <a class="dropdown-item" href="#">Accessories</a>
+                <a class="dropdown-item" href="#">Binders</a>
+                <a class="dropdown-item" href="#">Labels</a>
+                <a class="dropdown-item" href="#">Envelopes</a>
+                <a class="dropdown-item" href="#">Chairs</a>
+                <a class="dropdown-item" href="#">Machines</a>
+                <a class="dropdown-item" href="#">Tables</a>
+                <a class="dropdown-item" href="#">Phones</a>
+                <a class="dropdown-item" href="#">Fasteners</a>
               </div>
             </div>
 
             <div class="dropdown">
               <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
-                Country
+                Segment
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Pakista</a>
-                <a class="dropdown-item" href="#">Canada</a>
-                <a class="dropdown-item" href="#">Abc</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" method=post  name="Segment">
+                <a class="dropdown-item" href="#">Consumer</a>
+                <a class="dropdown-item" href="#">Home Office</a>
+                <a class="dropdown-item" href="#">Corporate</a>
               </div>
             </div>
 
             <div class="dropdown">
               <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
-                Country
+                Order_Priority
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Pakista</a>
-                <a class="dropdown-item" href="#">Canada</a>
-                <a class="dropdown-item" href="#">Abc</a>
-              </div>
-            </div>
-
-            <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
-                Country
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Pakista</a>
-                <a class="dropdown-item" href="#">Canada</a>
-                <a class="dropdown-item" href="#">Abc</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" method=post  name="Order_Priority">
+                <a class="dropdown-item" href="#">Medium</a>
+                <a class="dropdown-item" href="#">High</a>
+                <a class="dropdown-item" href="#">Critical</a>
+                <a class="dropdown-item" href="#">Low</a>
               </div>
             </div>
             
             <div class="dropdown">
               <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
-                Catagory
+                Region
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" method=post  name="Region">
+                
+                <a class="dropdown-item" href="#">Africa</a>
+                <a class="dropdown-item" href="#">Oceania</a>
+                <a class="dropdown-item" href="#">EMEA</a>
+                <a class="dropdown-item" href="#">North</a>
+                <a class="dropdown-item" href="#">Central Asia</a>
+                <a class="dropdown-item" href="#">West</a>
+                <a class="dropdown-item" href="#">North Asia</a>
+                <a class="dropdown-item" href="#">Central</a>
+                <a class="dropdown-item" href="#">South</a>
+                <a class="dropdown-item" href="#">Canada</a>
+                <a class="dropdown-item" href="#">Southeast Asia</a>
+                <a class="dropdown-item" href="#">East</a>
+                <a class="dropdown-item" href="#">Caribbean</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
+                Market
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" method=post  name="Market">
+                <a class="dropdown-item" href="#">APAC</a>
+                <a class="dropdown-item" href="#">EMEA</a>
+                <a class="dropdown-item" href="#">EU</a>
+                <a class="dropdown-item" href="#">US</a>
+                <a class="dropdown-item" href="#">LATAM</a>
+                <a class="dropdown-item" href="#">Canada</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
+                Category
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" method=post  name="Category">
                 <a class="dropdown-item" href="#">Office Supplies</a>
                 <a class="dropdown-item" href="#">Furniture</a>
                 <a class="dropdown-item" href="#">Technology</a>
               </div>
             </div>
 
+           
             <div class="dropdown">
               <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
-                Country
+                Ship_Mode
               </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Pakista</a>
-                <a class="dropdown-item" href="#">Canada</a>
-                <a class="dropdown-item" href="#">Abc</a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" method=post  name="Ship_Mode">
+                <a class="dropdown-item" href="#">Standard Class</a>
+                <a class="dropdown-item" href="#">Second Class</a>
+                <a class="dropdown-item" href="#">First Class</a>
+                <a class="dropdown-item" href="#">Same Day</a>
               </div>
             </div>
 
-            <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
-                Country
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Pakista</a>
-                <a class="dropdown-item" href="#">Canada</a>
-                <a class="dropdown-item" href="#">Abc</a>
-              </div>
-            </div>
-
-            <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
-                Country
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Pakista</a>
-                <a class="dropdown-item" href="#">Canada</a>
-                <a class="dropdown-item" href="#">Abc</a>
-              </div>
-            </div>
-
-            <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
-                Country
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Pakista</a>
-                <a class="dropdown-item" href="#">Canada</a>
-                <a class="dropdown-item" href="#">Abc</a>
-              </div>
-            </div>
-
-            <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
-                Country
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Pakista</a>
-                <a class="dropdown-item" href="#">Canada</a>
-                <a class="dropdown-item" href="#">Abc</a>
-              </div>
-            </div>
-
-            <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
-                Country
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Pakista</a>
-                <a class="dropdown-item" href="#">Canada</a>
-                <a class="dropdown-item" href="#">Abc</a>
-              </div>
-            </div>
-
-            <div class="dropdown">
-              <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="">
-                Country
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Pakista</a>
-                <a class="dropdown-item" href="#">Canada</a>
-                <a class="dropdown-item" href="#">Abc</a>
-              </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-            <!-- <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Select a Region</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-            </div>
-            <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Select a Market</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-            </div>
-             -->
-            <!-- <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Select a Segment</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
-            </div>
-            <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Select a Category</button>
-            <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-            </div>
-            </div>
-            <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Select a Sub_Category</button>
-            <div id="myDropdown" class="dropdown-content">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-            </div>
-            </div>
+           
+           </div>
             
-            <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Select an Order_Priority</button>
-            <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
+            
+            
+            
+            
             </div>
-            </div> -->
-            <!-- <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Select a Ship_Mode</button>
-            <div id="myDropdown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-            </div>
-            </div> -->
         
         <button class="btn-success btn">Submit</button> <br> Model's Prediction:(Predictive Sale Value): {{ pred }}
-        </div>
-       
+        </div> 
+      </form>
       </div>
     </section>
 
     <!----------------------------------------------------------------------------->
+    
+
+  
+    
     <!-- Team section -->
     <section id="teams" class="teams bg-light1 py-3">
       <h3 class="text-center">
@@ -396,21 +331,21 @@
       <p class="text-center">Ambreen|Rajesh|Ruba</p>
       <div class="card-group">
         <div class="card">
-          <img class="card-img-top" src="/images/image21.jpg" alt="Card image not-av">
+          <img class="card-img-top" src="/images/Ambreen.jpg" alt="Card image not-av">
           <div class="card-body">
             <h5 class="card-title">Ambreen Ahsen</h5>
             <p class="card-text">Title:Team Member</p>
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="/images/image14.jpg" alt="Card image cap">
+          <img class="card-img-top" src="/images/Rajesh.JPG" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Rajesh</h5>
             <p class="card-text">Title:Team Member</p>
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="/images/image15.jpg" alt="Card image cap">
+          <img class="card-img-top" src="/images/Ruba.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Ruba</h5>
             <p class="card-text">Title:Team Member</p>
